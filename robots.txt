@@ -7,4 +7,4 @@ User-agent: *
 
 Allow: /
 
-Sitemap: https://YOUR-DOMAIN.com/sitemap.xml
+Sitemap: https://littlequest.ytboostkit.workers.dev/sitemap.xml
