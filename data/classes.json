@@ -1,0 +1,76 @@
+{
+    "classes": [
+        {
+            "id": "nursery",
+            "name": {
+                "bn": "নার্সারি",
+                "hi": "नर्सरी",
+                "en": "Nursery"
+            },
+            "displayOrder": 1
+        },
+        {
+            "id": "lkg",
+            "name": {
+                "bn": "এলকেজি",
+                "hi": "एलकेजी",
+                "en": "LKG"
+            },
+            "displayOrder": 2
+        },
+        {
+            "id": "ukg",
+            "name": {
+                "bn": "ইউকেজি",
+                "hi": "यूकेजी",
+                "en": "UKG"
+            },
+            "displayOrder": 3
+        },
+        {
+            "id": "class-1",
+            "name": {
+                "bn": "প্রথম শ্রেণি",
+                "hi": "कक्षा 1",
+                "en": "Class 1"
+            },
+            "displayOrder": 4
+        },
+        {
+            "id": "class-2",
+            "name": {
+                "bn": "দ্বিতীয় শ্রেণি",
+                "hi": "कक्षा 2",
+                "en": "Class 2"
+            },
+            "displayOrder": 5
+        },
+        {
+            "id": "class-3",
+            "name": {
+                "bn": "তৃতীয় শ্রেণি",
+                "hi": "कक्षा 3",
+                "en": "Class 3"
+            },
+            "displayOrder": 6
+        },
+        {
+            "id": "class-4",
+            "name": {
+                "bn": "চতুর্থ শ্রেণি",
+                "hi": "कक्षा 4",
+                "en": "Class 4"
+            },
+            "displayOrder": 7
+        },
+        {
+            "id": "class-5",
+            "name": {
+                "bn": "পঞ্চম শ্রেণি",
+                "hi": "कक्षा 5",
+                "en": "Class 5"
+            },
+            "displayOrder": 8
+        }
+    ]
+}

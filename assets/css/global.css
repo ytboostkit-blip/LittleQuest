@@ -1,0 +1,233 @@
+/* =========================================
+   LittleQuest v1.0
+   Global Foundation
+========================================= */
+
+:root {
+    /* Typography */
+    --font-primary:
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    /* Text */
+    --text-primary: #172033;
+    --text-secondary: #5f6b7a;
+    --text-muted: #8994a3;
+    --text-on-primary: #ffffff;
+
+    /* Background */
+    --background: #f8fbff;
+    --surface: #ffffff;
+    --surface-soft: #f1f6fc;
+
+    /* Borders */
+    --border: #e1e8f0;
+
+    /* Brand */
+    --primary: #5b5ce2;
+    --primary-dark: #4647c7;
+
+    /* Status */
+    --success: #22a06b;
+    --warning: #e9a227;
+    --danger: #dc4c4c;
+
+    /* Radius */
+    --radius-small: 10px;
+    --radius-medium: 16px;
+    --radius-large: 24px;
+    --radius-round: 999px;
+
+    /* Shadows */
+    --shadow-small:
+        0 4px 14px rgba(20, 30, 50, 0.06);
+
+    --shadow-medium:
+        0 10px 30px rgba(20, 30, 50, 0.10);
+
+    /* Animation */
+    --transition-fast: 160ms ease;
+    --transition-normal: 220ms ease;
+}
+
+
+/* =========================================
+   Dark Theme
+========================================= */
+
+html[data-theme="dark"] {
+    --text-primary: #f3f6fb;
+    --text-secondary: #aeb8c7;
+    --text-muted: #7f8a9a;
+    --text-on-primary: #ffffff;
+
+    --background: #101522;
+    --surface: #171e2d;
+    --surface-soft: #20293a;
+
+    --border: #2d3748;
+
+    --shadow-small:
+        0 4px 14px rgba(0, 0, 0, 0.25);
+
+    --shadow-medium:
+        0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+
+/* =========================================
+   Reset
+========================================= */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    min-height: 100vh;
+
+    font-family: var(--font-primary);
+
+    color: var(--text-primary);
+    background: var(--background);
+
+    line-height: 1.6;
+
+    transition:
+        background var(--transition-normal),
+        color var(--transition-normal);
+}
+
+
+/* =========================================
+   Basic Elements
+========================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    line-height: 1.25;
+}
+
+p {
+    margin-top: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* =========================================
+   Accessibility
+========================================= */
+
+:focus-visible {
+    outline: 3px solid var(--primary);
+    outline-offset: 3px;
+}
+
+
+/* =========================================
+   Container
+========================================= */
+
+.container {
+    width: min(1200px, calc(100% - 32px));
+    margin-inline: auto;
+}
+
+
+/* =========================================
+   Utility Classes
+========================================= */
+
+.hidden {
+    display: none !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+
+/* =========================================
+   Selection
+========================================= */
+
+::selection {
+    background: var(--primary);
+    color: var(--text-on-primary);
+}
+
+
+/* =========================================
+   Scrollbar
+========================================= */
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--border) transparent;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: var(--radius-round);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--text-muted);
+}

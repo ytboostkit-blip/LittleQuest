@@ -1,0 +1,282 @@
+/* =========================================
+   LittleQuest v1.0
+   Responsive Foundation
+========================================= */
+
+
+/* =========================================
+   Tablet
+========================================= */
+
+@media (max-width: 1024px) {
+
+    .container {
+        width: min(100% - 28px, 1200px);
+    }
+
+    .lq-header-inner {
+        min-height: 68px;
+    }
+
+    .lq-sidebar {
+        width: 280px;
+    }
+
+}
+
+
+/* =========================================
+   Mobile
+========================================= */
+
+@media (max-width: 768px) {
+
+    /* ---------- Container ---------- */
+
+    .container {
+        width: calc(100% - 24px);
+    }
+
+
+    /* ---------- Header ---------- */
+
+    .lq-header-inner {
+        min-height: 64px;
+
+        gap: 12px;
+    }
+
+    .lq-brand {
+        gap: 8px;
+
+        font-size: 1.15rem;
+
+        min-width: 0;
+    }
+
+    .lq-brand-mark {
+        width: 38px;
+        height: 38px;
+
+        border-radius: 11px;
+    }
+
+    .lq-brand-name {
+        overflow: hidden;
+
+        text-overflow: ellipsis;
+
+        white-space: nowrap;
+    }
+
+    .lq-version {
+        display: inline-flex;
+
+        flex-shrink: 0;
+
+        padding: 4px 7px;
+
+        font-size: 0.68rem;
+    }
+
+
+    /* ---------- Header Actions ---------- */
+
+    .lq-header-actions {
+        gap: 6px;
+
+        flex-shrink: 0;
+    }
+
+    .lq-language-label {
+        display: none;
+    }
+
+    .lq-language-select {
+        min-height: 40px;
+
+        max-width: 110px;
+
+        padding: 8px 28px 8px 8px;
+    }
+
+    .lq-theme-toggle {
+        width: 40px;
+        height: 40px;
+
+        flex-shrink: 0;
+    }
+
+
+    /* ---------- Sidebar ---------- */
+
+    .lq-sidebar {
+        width: min(300px, 85vw);
+    }
+
+
+    /* ---------- Footer ---------- */
+
+    .lq-footer-bottom {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+}
+
+
+/* =========================================
+   Small Mobile
+========================================= */
+
+@media (max-width: 480px) {
+
+    /* ---------- Container ---------- */
+
+    .container {
+        width: calc(100% - 20px);
+    }
+
+
+    /* ---------- Header ---------- */
+
+    .lq-header-inner {
+        gap: 8px;
+    }
+
+    .lq-brand {
+        gap: 6px;
+
+        font-size: 1rem;
+    }
+
+    .lq-brand-mark {
+        width: 36px;
+        height: 36px;
+
+        border-radius: 10px;
+    }
+
+    .lq-version {
+        display: inline-flex;
+
+        flex-shrink: 0;
+
+        padding: 4px 6px;
+
+        font-size: 0.64rem;
+    }
+
+
+    /* ---------- Header Actions ---------- */
+
+    .lq-header-actions {
+        gap: 5px;
+    }
+
+    .lq-language-select {
+        max-width: 94px;
+
+        padding-left: 7px;
+        padding-right: 24px;
+
+        font-size: 0.82rem;
+    }
+
+    .lq-theme-toggle {
+        width: 38px;
+        height: 38px;
+    }
+
+}
+
+
+/* =========================================
+   Extra Small Mobile
+========================================= */
+
+@media (max-width: 380px) {
+
+    .lq-header-inner {
+        gap: 6px;
+    }
+
+
+    /* ---------- Brand ---------- */
+
+    .lq-brand {
+        flex: 1;
+
+        min-width: 0;
+
+        gap: 5px;
+
+        font-size: 0.88rem;
+    }
+
+    .lq-brand-mark {
+        width: 34px;
+        height: 34px;
+
+        flex-shrink: 0;
+
+        border-radius: 10px;
+    }
+
+    .lq-brand-name {
+        max-width: 72px;
+
+        overflow: hidden;
+
+        text-overflow: ellipsis;
+
+        white-space: nowrap;
+    }
+
+    .lq-version {
+        display: inline-flex !important;
+
+        visibility: visible !important;
+
+        opacity: 1 !important;
+
+        flex-shrink: 0;
+
+        white-space: nowrap;
+
+        padding: 3px 5px;
+
+        font-size: 0.60rem;
+    }
+
+
+    /* ---------- Header Actions ---------- */
+
+    .lq-header-actions {
+        gap: 4px;
+
+        flex-shrink: 0;
+    }
+
+    .lq-language-select {
+        width: 82px;
+
+        max-width: 82px;
+
+        padding-left: 6px;
+
+        padding-right: 20px;
+
+        font-size: 0.76rem;
+    }
+
+    .lq-theme-toggle {
+        width: 36px;
+
+        height: 36px;
+
+        flex-shrink: 0;
+    }
+
+}

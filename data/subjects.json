@@ -1,0 +1,342 @@
+{
+    "subjects": {
+        "nursery": [
+            {
+                "id": "english",
+                "name": {
+                    "bn": "ইংরেজি",
+                    "hi": "अंग्रेज़ी",
+                    "en": "English"
+                },
+                "displayOrder": 1
+            },
+            {
+                "id": "bengali",
+                "name": {
+                    "bn": "বাংলা",
+                    "hi": "बंगाली",
+                    "en": "Bengali"
+                },
+                "displayOrder": 2
+            },
+            {
+                "id": "mathematics",
+                "name": {
+                    "bn": "গণিত",
+                    "hi": "गणित",
+                    "en": "Mathematics"
+                },
+                "displayOrder": 3
+            },
+            {
+                "id": "general-awareness",
+                "name": {
+                    "bn": "সাধারণ জ্ঞান",
+                    "hi": "सामान्य ज्ञान",
+                    "en": "General Awareness"
+                },
+                "displayOrder": 4
+            }
+        ],
+
+        "lkg": [
+            {
+                "id": "english",
+                "name": {
+                    "bn": "ইংরেজি",
+                    "hi": "अंग्रेज़ी",
+                    "en": "English"
+                },
+                "displayOrder": 1
+            },
+            {
+                "id": "bengali",
+                "name": {
+                    "bn": "বাংলা",
+                    "hi": "बंगाली",
+                    "en": "Bengali"
+                },
+                "displayOrder": 2
+            },
+            {
+                "id": "mathematics",
+                "name": {
+                    "bn": "গণিত",
+                    "hi": "गणित",
+                    "en": "Mathematics"
+                },
+                "displayOrder": 3
+            },
+            {
+                "id": "general-awareness",
+                "name": {
+                    "bn": "সাধারণ জ্ঞান",
+                    "hi": "सामान्य ज्ञान",
+                    "en": "General Awareness"
+                },
+                "displayOrder": 4
+            }
+        ],
+
+        "ukg": [
+            {
+                "id": "english",
+                "name": {
+                    "bn": "ইংরেজি",
+                    "hi": "अंग्रेज़ी",
+                    "en": "English"
+                },
+                "displayOrder": 1
+            },
+            {
+                "id": "bengali",
+                "name": {
+                    "bn": "বাংলা",
+                    "hi": "बंगाली",
+                    "en": "Bengali"
+                },
+                "displayOrder": 2
+            },
+            {
+                "id": "mathematics",
+                "name": {
+                    "bn": "গণিত",
+                    "hi": "गणित",
+                    "en": "Mathematics"
+                },
+                "displayOrder": 3
+            },
+            {
+                "id": "environmental-studies",
+                "name": {
+                    "bn": "পরিবেশ শিক্ষা",
+                    "hi": "पर्यावरण अध्ययन",
+                    "en": "Environmental Studies"
+                },
+                "displayOrder": 4
+            },
+            {
+                "id": "general-awareness",
+                "name": {
+                    "bn": "সাধারণ জ্ঞান",
+                    "hi": "सामान्य ज्ञान",
+                    "en": "General Awareness"
+                },
+                "displayOrder": 5
+            }
+        ],
+
+        "class-1": [
+            {
+                "id": "bengali",
+                "name": {
+                    "bn": "বাংলা",
+                    "hi": "बंगाली",
+                    "en": "Bengali"
+                },
+                "displayOrder": 1
+            },
+            {
+                "id": "english",
+                "name": {
+                    "bn": "ইংরেজি",
+                    "hi": "अंग्रेज़ी",
+                    "en": "English"
+                },
+                "displayOrder": 2
+            },
+            {
+                "id": "mathematics",
+                "name": {
+                    "bn": "গণিত",
+                    "hi": "गणित",
+                    "en": "Mathematics"
+                },
+                "displayOrder": 3
+            },
+            {
+                "id": "environmental-studies",
+                "name": {
+                    "bn": "পরিবেশ শিক্ষা",
+                    "hi": "पर्यावरण अध्ययन",
+                    "en": "Environmental Studies"
+                },
+                "displayOrder": 4
+            }
+        ],
+
+        "class-2": [
+            {
+                "id": "bengali",
+                "name": {
+                    "bn": "বাংলা",
+                    "hi": "बंगाली",
+                    "en": "Bengali"
+                },
+                "displayOrder": 1
+            },
+            {
+                "id": "english",
+                "name": {
+                    "bn": "ইংরেজি",
+                    "hi": "अंग्रेज़ी",
+                    "en": "English"
+                },
+                "displayOrder": 2
+            },
+            {
+                "id": "mathematics",
+                "name": {
+                    "bn": "গণিত",
+                    "hi": "गणित",
+                    "en": "Mathematics"
+                },
+                "displayOrder": 3
+            },
+            {
+                "id": "environmental-studies",
+                "name": {
+                    "bn": "পরিবেশ শিক্ষা",
+                    "hi": "पर्यावरण अध्ययन",
+                    "en": "Environmental Studies"
+                },
+                "displayOrder": 4
+            }
+        ],
+
+        "class-3": [
+            {
+                "id": "bengali",
+                "name": {
+                    "bn": "বাংলা",
+                    "hi": "बंगाली",
+                    "en": "Bengali"
+                },
+                "displayOrder": 1
+            },
+            {
+                "id": "english",
+                "name": {
+                    "bn": "ইংরেজি",
+                    "hi": "अंग्रेज़ी",
+                    "en": "English"
+                },
+                "displayOrder": 2
+            },
+            {
+                "id": "mathematics",
+                "name": {
+                    "bn": "গণিত",
+                    "hi": "गणित",
+                    "en": "Mathematics"
+                },
+                "displayOrder": 3
+            },
+            {
+                "id": "environmental-studies",
+                "name": {
+                    "bn": "পরিবেশ শিক্ষা",
+                    "hi": "पर्यावरण अध्ययन",
+                    "en": "Environmental Studies"
+                },
+                "displayOrder": 4
+            }
+        ],
+
+        "class-4": [
+            {
+                "id": "bengali",
+                "name": {
+                    "bn": "বাংলা",
+                    "hi": "बंगाली",
+                    "en": "Bengali"
+                },
+                "displayOrder": 1
+            },
+            {
+                "id": "english",
+                "name": {
+                    "bn": "ইংরেজি",
+                    "hi": "अंग्रेज़ी",
+                    "en": "English"
+                },
+                "displayOrder": 2
+            },
+            {
+                "id": "mathematics",
+                "name": {
+                    "bn": "গণিত",
+                    "hi": "गणित",
+                    "en": "Mathematics"
+                },
+                "displayOrder": 3
+            },
+            {
+                "id": "science",
+                "name": {
+                    "bn": "বিজ্ঞান",
+                    "hi": "विज्ञान",
+                    "en": "Science"
+                },
+                "displayOrder": 4
+            },
+            {
+                "id": "social-studies",
+                "name": {
+                    "bn": "সমাজবিজ্ঞান",
+                    "hi": "सामाजिक अध्ययन",
+                    "en": "Social Studies"
+                },
+                "displayOrder": 5
+            }
+        ],
+
+        "class-5": [
+            {
+                "id": "bengali",
+                "name": {
+                    "bn": "বাংলা",
+                    "hi": "बंगाली",
+                    "en": "Bengali"
+                },
+                "displayOrder": 1
+            },
+            {
+                "id": "english",
+                "name": {
+                    "bn": "ইংরেজি",
+                    "hi": "अंग्रेज़ी",
+                    "en": "English"
+                },
+                "displayOrder": 2
+            },
+            {
+                "id": "mathematics",
+                "name": {
+                    "bn": "গণিত",
+                    "hi": "गणित",
+                    "en": "Mathematics"
+                },
+                "displayOrder": 3
+            },
+            {
+                "id": "science",
+                "name": {
+                    "bn": "বিজ্ঞান",
+                    "hi": "विज्ञान",
+                    "en": "Science"
+                },
+                "displayOrder": 4
+            },
+            {
+                "id": "social-studies",
+                "name": {
+                    "bn": "সমাজবিজ্ঞান",
+                    "hi": "सामाजिक अध्ययन",
+                    "en": "Social Studies"
+                },
+                "displayOrder": 5
+            }
+        ]
+    }
+}

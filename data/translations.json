@@ -1,0 +1,52 @@
+{
+    "bn": {
+        "siteName": "LittleQuest",
+        "home": "হোম",
+        "classes": "শ্রেণি",
+        "subjects": "বিষয়",
+        "ebooks": "ই-বুক",
+        "language": "ভাষা",
+        "kidsEducationLibrary": "শিশুদের ডিজিটাল শিক্ষা লাইব্রেরি",
+        "learningWorld": "Nursery থেকে Class 5 পর্যন্ত শেখার একটি সুন্দর জগৎ।",
+        "currentPage": "বর্তমান পৃষ্ঠা",
+        "footerCopyright": "LittleQuest",
+        "menuOpen": "নেভিগেশন খুলুন",
+        "menuClose": "নেভিগেশন বন্ধ করুন",
+        "chooseClass": "Nursery থেকে Class 5 পর্যন্ত শেখার পথ বেছে নাও।",
+        "exploreSubjects": "বিভিন্ন বিষয় থেকে শেখা শুরু করো।"
+    },
+
+    "hi": {
+        "siteName": "LittleQuest",
+        "home": "होम",
+        "classes": "कक्षाएँ",
+        "subjects": "विषय",
+        "ebooks": "ई-बुक्स",
+        "language": "भाषा",
+        "kidsEducationLibrary": "बच्चों की डिजिटल शिक्षा लाइब्रेरी",
+        "learningWorld": "नर्सरी से कक्षा 5 तक सीखने की एक सुंदर दुनिया।",
+        "currentPage": "वर्तमान पृष्ठ",
+        "footerCopyright": "LittleQuest",
+        "menuOpen": "नेविगेशन खोलें",
+        "menuClose": "नेविगेशन बंद करें",
+        "chooseClass": "नर्सरी से कक्षा 5 तक अपनी सीखने की राह चुनें।",
+        "exploreSubjects": "विभिन्न विषयों से सीखना शुरू करें।"
+    },
+
+    "en": {
+        "siteName": "LittleQuest",
+        "home": "Home",
+        "classes": "Classes",
+        "subjects": "Subjects",
+        "ebooks": "eBooks",
+        "language": "Language",
+        "kidsEducationLibrary": "Kids Digital Education Library",
+        "learningWorld": "A beautiful learning world from Nursery to Class 5.",
+        "currentPage": "Current Page",
+        "footerCopyright": "LittleQuest",
+        "menuOpen": "Open navigation",
+        "menuClose": "Close navigation",
+        "chooseClass": "Choose your learning path from Nursery to Class 5.",
+        "exploreSubjects": "Start learning from different subjects."
+    }
+}

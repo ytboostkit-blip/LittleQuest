@@ -1,0 +1,10 @@
+# =========================================
+# LittleQuest v1.0
+# Robots.txt
+# =========================================
+
+User-agent: *
+
+Allow: /
+
+Sitemap: https://YOUR-DOMAIN.com/sitemap.xml

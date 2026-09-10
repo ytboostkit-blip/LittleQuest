@@ -1,0 +1,105 @@
+<!-- =========================================
+     LittleQuest v1.0
+     Global Header
+========================================= -->
+
+<header class="lq-header">
+
+    <div class="container lq-header-inner">
+
+        <!-- Navigation Toggle -->
+
+        <button
+            type="button"
+            class="lq-menu-toggle"
+            id="lqMenuToggle"
+            aria-label="Open navigation"
+            aria-expanded="false"
+            aria-controls="lqSidebar"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+
+        <!-- Brand -->
+
+        <a
+            href="index.html"
+            class="lq-brand"
+            aria-label="LittleQuest Home"
+        >
+
+            <span
+                class="lq-brand-mark"
+                aria-hidden="true"
+            >
+                LQ
+            </span>
+
+            <span class="lq-brand-name">
+                LittleQuest
+            </span>
+
+            <span class="lq-version">
+                v1.0
+            </span>
+
+        </a>
+
+
+        <!-- Header Actions -->
+
+        <div class="lq-header-actions">
+
+            <!-- Language Selector -->
+
+            <label
+                class="lq-language-control"
+                for="lqLanguageSelect"
+            >
+
+                <span
+                    class="lq-language-label"
+					data-i18n="language"
+                >
+                    Language
+                </span>
+
+                <select
+                    id="lqLanguageSelect"
+                    class="lq-language-select"
+                    aria-label="Select language"
+                >
+
+                    <option value="bn">
+                        বাংলা
+                    </option>
+
+                    <option value="hi">
+                        हिन्दी
+                    </option>
+
+                    <option value="en">
+                        English
+                    </option>
+
+                </select>
+
+            </label>
+			
+			<button
+				type="button"
+				id="lqThemeToggle"
+				class="lq-theme-toggle"
+				aria-label="Toggle theme"
+			>
+				<span id="lqThemeIcon" aria-hidden="true">🌙</span>
+			</button>
+
+        </div>
+
+    </div>
+
+</header>

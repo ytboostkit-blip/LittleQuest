@@ -1,0 +1,50 @@
+{
+    "site": {
+        "name": "LittleQuest",
+        "version": "1.0",
+        "versionLabel": "v1.0",
+        "type": "Kids Digital Education Library",
+        "scope": "Nursery to Class 5"
+    },
+
+    "languages": [
+        {
+            "code": "bn",
+            "name": "বাংলা",
+            "nativeName": "বাংলা"
+        },
+        {
+            "code": "hi",
+            "name": "हिन्दी",
+            "nativeName": "हिन्दी"
+        },
+        {
+            "code": "en",
+            "name": "English",
+            "nativeName": "English"
+        }
+    ],
+
+    "defaultLanguage": "bn",
+
+    "theme": {
+        "default": "light",
+        "available": [
+            "light",
+            "dark"
+        ]
+    },
+
+    "education": {
+        "minimumLevel": "Nursery",
+        "maximumLevel": "Class 5"
+    },
+
+    "features": {
+        "ebookDownload": false,
+        "search": true,
+        "quiz": true,
+        "activities": true,
+        "multilingual": true
+    }
+}
