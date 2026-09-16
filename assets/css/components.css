@@ -17,11 +17,18 @@
 
     width: 100%;
 
-    background: var(--surface);
+    background: linear-gradient(
+        90deg,
+        #FFADEE 0%,
+        #FFF5FA 45%,
+        #FFE185 100%
+    );
 
-    border-bottom: 1px solid var(--border);
+    border-bottom: 2px solid var(--secondary);
 
-    box-shadow: var(--shadow-small);
+    box-shadow:
+        0 6px 18px rgba(146, 0, 58, 0.12),
+        0 2px 6px rgba(146, 0, 58, 0.08);
 }
 
 .lq-header-inner {
@@ -68,12 +75,11 @@
 
     border-radius: 14px;
 
-    background:
-        linear-gradient(
-            135deg,
-            #6366f1,
-            #8b5cf6
-        );
+    background: linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
 
     color: #ffffff;
 
@@ -85,6 +91,12 @@
 
 .lq-brand-name {
     line-height: 1;
+
+    color: var(--primary);
+
+    font-weight: 900;
+
+    letter-spacing: -0.3px;
 }
 
 
@@ -98,11 +110,11 @@
 
     padding: 4px 9px;
 
-    border: 1px solid var(--border);
+    border: 1px solid rgba(146, 0, 58, 0.18);
     border-radius: 999px;
 
-    background: var(--surface-soft);
-    color: var(--text-secondary);
+    background: rgba(255, 255, 255, 0.55);
+    color: var(--primary);
 
     font-size: 0.75rem;
     font-weight: 700;
@@ -138,27 +150,23 @@
     gap: 8px;
 }
 
-.lq-language-label {
-    color: var(--text-secondary);
-
-    font-size: 0.82rem;
-    font-weight: 700;
-}
-
 .lq-language-select {
     min-height: 42px;
 
     padding: 8px 34px 8px 11px;
 
-    border: 1px solid var(--border);
+    border: 1px solid rgba(146, 0, 58, 0.18);
     border-radius: var(--radius-medium);
 
-    background: var(--surface);
-    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.72);
+    color: var(--primary);
 
     cursor: pointer;
 
     outline: none;
+
+    box-shadow:
+        0 3px 10px rgba(146, 0, 58, 0.06);
 
     transition:
         border-color var(--transition-fast),
@@ -167,52 +175,9 @@
 
 .lq-language-select:hover,
 .lq-language-select:focus {
-    border-color: var(--primary);
+    border-color: var(--secondary);
 
-    background: var(--surface-soft);
-}
-
-
-/* =========================================
-   Theme Toggle
-========================================= */
-
-.lq-theme-toggle {
-    width: 44px;
-    height: 44px;
-
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    flex-shrink: 0;
-
-    padding: 0;
-
-    border: 1px solid var(--border);
-    border-radius: var(--radius-medium);
-
-    background: var(--surface);
-    color: var(--text-primary);
-
-    font-size: 1.15rem;
-
-    cursor: pointer;
-
-    transition:
-        background var(--transition-fast),
-        border-color var(--transition-fast),
-        transform var(--transition-fast);
-}
-
-.lq-theme-toggle:hover {
-    background: var(--surface-soft);
-
-    border-color: var(--primary);
-}
-
-.lq-theme-toggle:active {
-    transform: scale(0.95);
+    background: #ffffff;
 }
 
 
@@ -241,35 +206,36 @@
 
     transform: translateY(-50%);
 
-    border: 1px solid var(--border);
+    border: 1px solid rgba(146, 0, 58, 0.20);
     border-radius: 18px;
 
-    background: var(--surface);
-    color: var(--text-primary);
+    background: #ffffff;
+
+    color: var(--primary);
 
     box-shadow:
-        0 10px 28px rgba(15, 23, 42, 0.16),
-        0 2px 6px rgba(15, 23, 42, 0.08);
+        0 6px 18px rgba(146, 0, 58, 0.12),
+        0 2px 6px rgba(146, 0, 58, 0.08);
 
     z-index: 4000;
 
     cursor: pointer;
 
     transition:
-			left 280ms ease,
-			background var(--transition-fast),
-			border-color var(--transition-fast),
-			box-shadow var(--transition-fast),
-			transform var(--transition-fast);
+        left 280ms ease,
+        background var(--transition-fast),
+        border-color var(--transition-fast),
+        box-shadow var(--transition-fast),
+        transform var(--transition-fast);
 }
 
 .lq-menu-toggle:hover {
-    background: var(--surface-soft);
+    background: var(--accent-pink);
 
-    border-color: var(--primary);
+    border-color: var(--secondary);
 
     box-shadow:
-        0 14px 32px rgba(15, 23, 42, 0.18);
+        0 10px 24px rgba(146, 0, 58, 0.14);
 
     transform:
         translateY(-50%)
@@ -302,7 +268,7 @@
 
     border-radius: 999px;
 
-    background: currentColor;
+    background: var(--primary);
 }
 
 
@@ -407,6 +373,8 @@
 ========================================= */
 
 .lq-main {
+    position: relative;
+
     min-height: calc(100vh - 72px);
 
     padding-top: 72px;
@@ -506,7 +474,7 @@
 
 
 /* =========================================
-   Homepage
+   Homepage Hero
 ========================================= */
 
 .lq-home-hero {
@@ -514,26 +482,15 @@
 
     overflow: hidden;
 
-    margin-top: 24px;
+    margin-top: 3px;
 
     border-radius: 28px;
 
     background:
-        radial-gradient(
-            circle at 15% 20%,
-            rgba(255, 255, 255, 0.22),
-            transparent 25%
-        ),
-        radial-gradient(
-            circle at 85% 80%,
-            rgba(255, 255, 255, 0.18),
-            transparent 25%
-        ),
         linear-gradient(
             135deg,
-            #4f46e5,
-            #7c3aed,
-            #db2777
+            var(--primary),
+            var(--secondary)
         );
 
     color: #ffffff;
@@ -552,7 +509,7 @@
 
     margin-inline: auto;
 
-    padding: 56px 42px;
+    padding: 24px 18px;
 }
 
 .lq-home-badge {
@@ -561,7 +518,7 @@
 
     gap: 6px;
 
-    margin-bottom: 18px;
+    margin-bottom: 12px;
 
     padding: 7px 13px;
 
@@ -579,29 +536,39 @@
 }
 
 .lq-home-hero h1 {
-    max-width: 760px;
+    font-family: "Nunito", sans-serif;
 
-    margin-bottom: 14px;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 900;
+    line-height: 1.15;
+    letter-spacing: -0.6px;
 
-    color: #ffffff;
+    background: linear-gradient(
+        90deg,
+        #FFE185 0%,
+        #FFADEE 50%,
+        #FFFFFF 100%
+    );
 
-    font-size: clamp(2rem, 5vw, 3.25rem);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 
-    line-height: 1.12;
-
-    letter-spacing: -0.035em;
+    margin-bottom: 10px;
+    white-space: nowrap;
 }
 
 .lq-home-hero p {
-    max-width: 650px;
+    max-width: 680px;
 
-    margin: 0 auto;
+    margin:
+        0 auto;
 
     color: #ffffff;
 
     font-size: 1.08rem;
 
-    line-height: 1.7;
+    line-height: 1.55;
 
     opacity: 0.94;
 }
@@ -612,6 +579,8 @@
 ========================================= */
 
 .lq-home-section {
+    position: relative;
+
     margin-top: 42px;
 }
 
@@ -622,9 +591,13 @@
 .lq-section-heading h2 {
     margin-bottom: 6px;
 
+    color: var(--primary);
+
     font-size: 1.6rem;
 
-    font-weight: 800;
+    font-weight: 900;
+
+    letter-spacing: -0.4px;
 }
 
 .lq-section-heading p {
@@ -657,6 +630,7 @@
     position: relative;
 
     overflow: hidden;
+	
 
     min-height: 170px;
 
@@ -667,7 +641,7 @@
 
     padding: 24px 18px;
 
-    border: 1px solid var(--border);
+    border: 1.5px solid var(--primary);	
     border-radius: 22px;
 
     background: var(--surface);
@@ -695,21 +669,22 @@
 
     height: 5px;
 
-    background:
-        linear-gradient(
-            90deg,
-            #6366f1,
-            #8b5cf6,
-            #ec4899
-        );
+    background: linear-gradient(
+        90deg,
+        var(--primary),
+        var(--secondary),
+        var(--accent-pink)
+    );
 }
 
 .lq-class-card:hover {
-    transform: translateY(-6px);
+    transform: translateY(-4px);
 
-    border-color: var(--primary);
+    border-color: var(--secondary);
 
-    box-shadow: var(--shadow-medium);
+    box-shadow:
+        0 12px 28px rgba(146, 0, 58, 0.46),
+        0 4px 10px rgba(246, 36, 119, 0.30);
 }
 
 .lq-class-card:active {
@@ -786,7 +761,7 @@
 
     padding: 24px 18px;
 
-    border: 1px solid var(--border);
+    border: 1.5px solid var(--primary);
     border-radius: 22px;
 
     background: var(--surface);
@@ -800,8 +775,7 @@
     transition:
         transform var(--transition-fast),
         border-color var(--transition-fast),
-        box-shadow var(--transition-fast),
-        background var(--transition-fast);
+        box-shadow var(--transition-fast);
 }
 
 .lq-subject-card::before {
@@ -815,21 +789,23 @@
 
     height: 5px;
 
-    background:
-        linear-gradient(
-            90deg,
-            #10b981,
-            #06b6d4,
-            #3b82f6
-        );
+    background: linear-gradient(
+        90deg,
+        var(--secondary),
+        var(--accent-pink),
+        var(--accent-yellow)
+    );
 }
 
+
 .lq-subject-card:hover {
-    transform: translateY(-6px);
+    transform: translateY(-4px);
 
-    border-color: var(--primary);
+    border-color: var(--secondary);
 
-    box-shadow: var(--shadow-medium);
+    box-shadow:
+        0 12px 28px rgba(146, 0, 58, 0.46),
+        0 4px 10px rgba(246, 36, 119, 0.30);
 }
 
 .lq-subject-card:active {
@@ -897,9 +873,28 @@
 
     padding: 30px 0;
 
-    background: var(--surface);
+    background: linear-gradient(
+        90deg,
+        #fff0f6 0%,
+        #ffffff 50%,
+        #fff8df 100%
+    );
 
-    border-top: 1px solid var(--border);
+    border-top: 2px solid var(--accent-pink);
+
+    box-shadow:
+        0 -6px 18px rgba(146, 0, 58, 0.10),
+        0 -2px 6px rgba(146, 0, 58, 0.06);
+}
+
+.lq-footer a {
+    color: var(--primary);
+
+    font-weight: 700;
+}
+
+.lq-footer a:hover {
+    color: var(--secondary);
 }
 
 .lq-footer-bottom {
@@ -912,6 +907,23 @@
     color: var(--text-secondary);
 
     font-size: 0.9rem;
+}
+
+
+/* =========================================
+   Global Background
+========================================= */
+
+body {
+    background-color: var(--background);
+
+    background-image:
+        url("../images/backgrounds/littlequest-global-bg.webp");
+
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 
@@ -964,10 +976,6 @@
         gap: 6px;
     }
 
-    .lq-language-label {
-        display: none;
-    }
-
     .lq-language-select {
         min-height: 40px;
 
@@ -975,14 +983,12 @@
         padding-right: 28px;
     }
 
-    .lq-theme-toggle {
-        width: 40px;
-        height: 40px;
+
+    /* ---------- Main ---------- */
+
+    .lq-main {
+        padding-top: 0px;
     }
-	
-	.lq-main {
-    padding-top: 64px;
-	}
 
 
     /* ---------- Menu Button ---------- */
@@ -1018,11 +1024,13 @@
     /* ---------- Hero ---------- */
 
     .lq-home-hero-content {
-        padding: 42px 24px;
+        padding: 28px 20px;
     }
 
     .lq-home-hero h1 {
         font-size: 2rem;
+
+        white-space: normal;
     }
 
     .lq-home-hero p {
@@ -1045,4 +1053,105 @@
 
         align-items: flex-start;
     }
+}
+.lq-section-heading {
+    background: #FFF5FA;
+    border: 2px solid var(--accent-pink);
+    border-radius: var(--radius-medium);
+    padding: 14px 18px;
+    margin-bottom: 20px;
+    box-shadow: var(--shadow-small);
+}
+
+.lq-section-heading h2 {
+    color: var(--primary);
+    margin-bottom: 6px;
+}
+
+.lq-section-heading p {
+    color: var(--primary) !important;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+
+.lq-class-card,
+.lq-subject-card {
+    padding: 20px;
+    text-align: center;
+}
+
+.lq-class-card h3,
+.lq-subject-card h3 {
+    margin: 0 0 6px;
+    color: var(--primary);
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+.lq-class-card p,
+.lq-subject-card p {
+    margin: 0;
+    color: var(--primary);
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.lq-class-card .lq-card-icon,
+.lq-subject-card .lq-card-icon {
+    margin-bottom: 10px;
+}
+
+/* =========================================
+   LittleQuest v1.0
+   Mobile Card Polish
+========================================= */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: min(100% - 24px, 1200px);
+    }
+
+    .lq-section-heading {
+        padding: 12px 14px;
+        margin-bottom: 16px;
+    }
+
+    .lq-section-heading h2 {
+        font-size: 1.35rem;
+    }
+
+    .lq-section-heading p {
+        font-size: 0.92rem;
+        line-height: 1.45;
+    }
+
+    .lq-class-card,
+    .lq-subject-card {
+        padding: 16px 12px;
+    }
+
+    .lq-class-card h3,
+    .lq-subject-card h3 {
+        font-size: 1rem;
+        line-height: 1.3;
+    }
+
+    .lq-class-card p,
+    .lq-subject-card p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+
+    .lq-class-card .lq-card-icon,
+    .lq-subject-card .lq-card-icon {
+        margin-bottom: 8px;
+    }
+
+}
+
+.lq-class-card .lq-class-card-icon {
+    margin-bottom: 10px;
+    line-height: 1;
 }
