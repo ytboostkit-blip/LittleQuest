@@ -57,7 +57,47 @@
 
                 card.className =
                     "lq-card lq-class-card";
+				
+				card.setAttribute(
+					"tabindex",
+					"0"
+				);
 
+				card.setAttribute(
+					"role",
+					"button"
+				);
+
+				function openClass() {
+
+					window.location.href =
+						"class.html?class=" +
+						encodeURIComponent(
+							item.id
+						);
+				}
+
+				card.addEventListener(
+					"click",
+					openClass
+				);
+
+				card.addEventListener(
+					"keydown",
+					function (event) {
+
+						if (
+							event.key === "Enter" ||
+							event.key === " "
+						) {
+
+							event.preventDefault();
+
+							openClass();
+						}
+
+					}
+				);
 
                 const icon =
                     document.createElement("div");

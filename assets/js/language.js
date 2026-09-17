@@ -170,6 +170,38 @@
             );
         }
     );
+	
+	    /* =====================================
+       Sync Language After Back / Forward
+    ===================================== */
+
+    window.addEventListener(
+        "pageshow",
+        function () {
+
+            const currentLanguage =
+                getSavedLanguage();
+
+            applyLanguage(
+                currentLanguage
+            );
+
+            connectSelector();
+
+            document.dispatchEvent(
+                new CustomEvent(
+                    "littlequest:languageChanged",
+                    {
+                        detail: {
+                            language:
+                                currentLanguage
+                        }
+                    }
+                )
+            );
+
+        }
+    );
 
     /* =====================================
        Public API
