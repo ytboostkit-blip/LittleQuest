@@ -13,7 +13,9 @@
         "menuOpen": "নেভিগেশন খুলুন",
         "menuClose": "নেভিগেশন বন্ধ করুন",
         "chooseClass": "Nursery থেকে Class 5 পর্যন্ত শেখার পথ বেছে নাও।",
-        "exploreSubjects": "বিভিন্ন বিষয় থেকে শেখা শুরু করো।"
+        "exploreSubjects": "বিভিন্ন বিষয় থেকে শেখা শুরু করো।",
+		"pageNotFoundTitle": "এই পৃষ্ঠাটি খুঁজে পাওয়া যায়নি",
+		"pageNotFoundMessage": "দুঃখিত! তুমি যে পৃষ্ঠাটি খুঁজছ, সেটি হয়তো সরানো হয়েছে অথবা ঠিকানাটি পরিবর্তন হয়েছে।"
     },
 
     "hi": {
@@ -30,7 +32,9 @@
         "menuOpen": "नेविगेशन खोलें",
         "menuClose": "नेविगेशन बंद करें",
         "chooseClass": "नर्सरी से कक्षा 5 तक अपनी सीखने की राह चुनें।",
-        "exploreSubjects": "विभिन्न विषयों से सीखना शुरू करें।"
+        "exploreSubjects": "विभिन्न विषयों से सीखना शुरू करें।",
+		"pageNotFoundTitle": "यह पृष्ठ नहीं मिला",
+		"pageNotFoundMessage": "क्षमा करें! आप जिस पृष्ठ को खोज रहे हैं, वह शायद हटा दिया गया है या उसका पता बदल गया है।"
     },
 
     "en": {
@@ -47,6 +51,8 @@
         "menuOpen": "Open navigation",
         "menuClose": "Close navigation",
         "chooseClass": "Choose your learning path from Nursery to Class 5.",
-        "exploreSubjects": "Start learning from different subjects."
+        "exploreSubjects": "Start learning from different subjects.",
+		"pageNotFoundTitle": "Page Not Found",
+		"pageNotFoundMessage": "Sorry! The page you are looking for may have been moved or its address may have changed."
     }
 }
