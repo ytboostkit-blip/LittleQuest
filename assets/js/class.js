@@ -75,7 +75,7 @@
        Update SEO
     ===================================== */
 
-    function updateSEO(className) {
+    function updateSEO(classId, className) {
 
         const title =
             "LittleQuest — " +
@@ -86,6 +86,12 @@
             "LittleQuest — " +
             className +
             " এর জন্য সহজ, সুন্দর ও শিক্ষামূলক ডিজিটাল বিষয়বস্তু।";
+
+
+        const canonicalUrl =
+            "https://littlequest.ytboostkit.workers.dev/" +
+            "class.html?class=" +
+            encodeURIComponent(classId);
 
 
         document.title = title;
@@ -112,7 +118,7 @@
         if (canonical) {
             canonical.setAttribute(
                 "href",
-                window.location.href
+                canonicalUrl
             );
         }
 
@@ -151,7 +157,7 @@
         if (ogUrl) {
             ogUrl.setAttribute(
                 "content",
-                window.location.href
+                canonicalUrl
             );
         }
 
@@ -178,6 +184,19 @@
             twitterDescription.setAttribute(
                 "content",
                 description
+            );
+        }
+
+
+        const twitterUrl =
+            document.getElementById(
+                "lqTwitterUrl"
+            );
+
+        if (twitterUrl) {
+            twitterUrl.setAttribute(
+                "content",
+                canonicalUrl
             );
         }
     }
@@ -770,6 +789,7 @@ if (breadcrumb) {
             );
 
             updateSEO(
+                classId,
                 className
             );
 

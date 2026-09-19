@@ -484,7 +484,17 @@ function updateSEO(
             description
         );
     }
+    const twitterUrl =
+        document.getElementById(
+            "lqTwitterUrl"
+        );
 
+    if (twitterUrl) {
+        twitterUrl.setAttribute(
+            "content",
+            canonicalUrl
+        );
+    }
 }
 
 
