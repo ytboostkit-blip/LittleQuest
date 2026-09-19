@@ -99,13 +99,23 @@
 					}
 				);
 
-                const icon =
-                    document.createElement("div");
+                const image =
+					document.createElement("img");
 
-                icon.className =
-                    "lq-class-card-icon";
+				image.className =
+					"lq-class-card-image";
 
-                icon.textContent = "📚";
+				image.src =
+					"assets/images/classes/" +
+					encodeURIComponent(item.id) +
+					".webp";
+
+				image.alt =
+					item.name[language] ||
+					item.name.en ||
+					item.id;
+
+				image.loading = "lazy";
 
 
                 const title =
@@ -117,8 +127,8 @@
                     item.id;
 
 
-                card.appendChild(icon);
-                card.appendChild(title);
+                card.appendChild(image);
+				card.appendChild(title);
 
                 grid.appendChild(card);
 

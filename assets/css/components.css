@@ -754,6 +754,38 @@
         box-shadow var(--transition-fast);
 }
 
+/* =========================================
+   LittleQuest v1.0
+   Class Card Images
+========================================= */
+
+.lq-class-card-image {
+    display: block;
+
+    width: 100%;
+    aspect-ratio: 16 / 9;
+
+    object-fit: cover;
+
+    border-radius: 16px;
+
+    margin-bottom: 14px;
+
+    border: 1px solid var(--border);
+
+    box-shadow: var(--shadow-small);
+
+    transition:
+        transform var(--transition-fast),
+        box-shadow var(--transition-fast);
+}
+
+.lq-class-card:hover .lq-class-card-image {
+    transform: scale(1.03);
+
+    box-shadow: var(--shadow-medium);
+}
+
 .lq-class-card:hover .lq-class-card-icon {
     transform: scale(1.08);
 
@@ -1299,4 +1331,400 @@
         line-height: 1.7;
     }
 
+}
+/* =========================================
+   LittleQuest v1.0
+   Topic Page - Current HTML Structure
+========================================= */
+
+/* ---------- Topic Hero ---------- */
+
+#lqTopicClassBadge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 12px;
+    padding: 7px 14px;
+
+    border-radius: var(--radius-round);
+
+    background: var(--accent-yellow);
+    color: var(--primary);
+
+    font-size: 0.85rem;
+    font-weight: 800;
+}
+
+#lqTopicTitle {
+    margin: 0 0 10px;
+
+    color: var(--primary);
+
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 900;
+
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+}
+
+#lqTopicDescription {
+    max-width: 760px;
+
+    margin: 0 auto;
+
+    color: var(--text-secondary);
+
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+
+/* ---------- Topic Content Container ---------- */
+
+#lqTopicContentSection {
+    margin-top: 24px;
+}
+
+
+/* ---------- Chapter Information ---------- */
+
+.lq-topic-chapter-info {
+    margin-bottom: 20px;
+
+    padding: 14px 18px;
+
+    background: #FFF5FA;
+
+    border: 2px solid var(--accent-pink);
+    border-radius: var(--radius-medium);
+
+    color: var(--primary);
+
+    font-size: 0.95rem;
+    font-weight: 700;
+
+    box-shadow: var(--shadow-small);
+}
+
+
+/* ---------- Topic Content ---------- */
+
+#lqTopicContent {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+/* ---------- Individual Topic Sections ---------- */
+
+#lqTopicContent .lq-topic-section {
+    padding: 24px;
+
+    background: #ffffff;
+
+    border: 2px solid var(--border);
+    border-radius: var(--radius-large);
+
+    box-shadow: var(--shadow-small);
+}
+
+#lqTopicContent .lq-topic-section h2 {
+    margin: 0 0 12px;
+
+    color: var(--primary);
+
+    font-size: 1.4rem;
+    font-weight: 900;
+
+    line-height: 1.35;
+}
+
+#lqTopicContent .lq-topic-section p {
+    margin: 0;
+
+    color: var(--text-primary);
+
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+
+/* ---------- Example ---------- */
+
+#lqTopicContent .is-example {
+    background: #FFF8DF;
+
+    border-color: var(--accent-yellow);
+}
+
+
+/* ---------- Practice ---------- */
+
+#lqTopicContent .is-practice {
+    background: #FFF5FA;
+
+    border-color: var(--accent-pink);
+}
+
+#lqTopicContent .lq-topic-question {
+    margin-top: 14px;
+
+    padding: 16px 18px;
+
+    background: #ffffff;
+
+    border-left: 5px solid var(--secondary);
+    border-radius: 12px;
+
+    color: var(--text-primary);
+
+    font-size: 1.05rem;
+    font-weight: 700;
+
+    line-height: 1.7;
+}
+
+#lqTopicContent .lq-topic-answer {
+    margin-top: 14px;
+
+    padding: 14px 18px;
+
+    background: var(--accent-yellow);
+
+    border-radius: 12px;
+
+    color: var(--primary);
+
+    font-size: 1rem;
+    font-weight: 800;
+
+    line-height: 1.6;
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 600px) {
+
+    #lqTopicTitle {
+        font-size: 1.8rem;
+    }
+
+    #lqTopicDescription {
+        font-size: 0.95rem;
+        line-height: 1.65;
+    }
+
+    #lqTopicContentSection {
+        margin-top: 18px;
+    }
+
+    #lqTopicContent .lq-topic-section {
+        padding: 20px 16px;
+
+        border-radius: 18px;
+    }
+
+    #lqTopicContent .lq-topic-section h2 {
+        font-size: 1.2rem;
+    }
+
+    #lqTopicContent .lq-topic-section p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    #lqTopicContent .lq-topic-question,
+    #lqTopicContent .lq-topic-answer {
+        padding: 13px 14px;
+
+        font-size: 0.95rem;
+    }
+
+}
+
+/* =========================================
+   LittleQuest v1.0
+   Topic Page Visual Design
+========================================= */
+
+.lq-page-hero {
+    margin-top: 18px;
+    margin-bottom: 24px;
+    padding: 30px 24px;
+    background: #ffffff;
+    border: 2px solid var(--accent-pink);
+    border-radius: var(--radius-large);
+    box-shadow: var(--shadow-medium);
+    text-align: center;
+}
+
+#lqTopicContentSection {
+    margin-top: 24px;
+    padding: 24px;
+    background: #ffffff;
+    border: 2px solid var(--accent-pink);
+    border-radius: var(--radius-large);
+    box-shadow: var(--shadow-medium);
+}
+
+@media (max-width: 600px) {
+    .lq-page-hero {
+        margin-top: 14px;
+        margin-bottom: 18px;
+        padding: 24px 16px;
+    }
+
+    #lqTopicContentSection {
+        margin-top: 18px;
+        padding: 16px;
+    }
+}
+
+/* =========================================
+   LittleQuest v1.0
+   Chapter Page Visual Polish
+========================================= */
+
+/* Chapter hero */
+.lq-chapter-hero, .lq-page-hero {
+    margin: 18px auto 26px;
+    padding: 32px 24px;
+    max-width: 1000px;
+    background: #ffffff;
+    border: 2px solid var(--accent-pink);
+    border-radius: var(--radius-large);
+    box-shadow: var(--shadow-medium);
+    text-align: center;
+}
+
+.lq-chapter-hero h1, .lq-page-hero h1 {
+    margin: 8px 0 12px;
+    color: var(--primary);
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+.lq-chapter-hero p, .lq-page-hero p {
+    max-width: 720px;
+    margin: 0 auto;
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+/* Topics section */
+#lqTopicsSection, #lqChapterTopicsSection {
+    max-width: 1000px;
+    margin: 0 auto 30px;
+    padding: 28px 24px;
+    background: #ffffff;
+    border: 2px solid var(--accent-pink);
+    border-radius: var(--radius-large);
+    box-shadow: var(--shadow-medium);
+}
+
+#lqTopicsSection h2, #lqChapterTopicsSection h2 {
+    margin: 0 0 6px;
+    color: var(--primary);
+    font-size: 1.55rem;
+    font-weight: 900;
+}
+
+#lqTopicsSection p, #lqChapterTopicsSection p {
+    margin: 0 0 22px;
+    color: var(--text-secondary);
+}
+
+/* Topic grid */
+#lqTopicGrid, #lqTopicsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+#lqTopicGrid .lq-card, #lqTopicsGrid .lq-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 72px;
+    padding: 18px 20px;
+    background: #fffafc;
+    border: 2px solid #ffd1e3;
+    border-radius: 16px;
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 800;
+    box-shadow: var(--shadow-small);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast), background var(--transition-fast);
+}
+
+#lqTopicGrid .lq-card::before, #lqTopicsGrid .lq-card::before {
+    content: "";
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    margin-right: 14px;
+    flex: 0 0 34px;
+    border-radius: 50%;
+    background: var(--accent-yellow);
+    color: var(--primary);
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+
+#lqTopicGrid .lq-card:hover, #lqTopicsGrid .lq-card:hover {
+    transform: translateY(-3px);
+    background: #fff0f6;
+    border-color: var(--secondary);
+    box-shadow: var(--shadow-medium);
+}
+
+#lqTopicGrid .lq-card:focus-visible, #lqTopicsGrid .lq-card:focus-visible {
+    outline: 3px solid var(--accent-yellow);
+    outline-offset: 3px;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    .lq-chapter-hero, .lq-page-hero {
+        margin: 14px 0 20px;
+        padding: 24px 16px;
+    }
+
+    #lqTopicsSection, #lqChapterTopicsSection {
+        margin-bottom: 22px;
+        padding: 22px 16px;
+    }
+
+    #lqTopicGrid, #lqTopicsGrid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    #lqTopicGrid .lq-card, #lqTopicsGrid .lq-card {
+        min-height: 64px;
+        padding: 15px 16px;
+        font-size: 1rem;
+    }
+}
+
+/* =========================================
+   LittleQuest v1.0
+   Topic Page Header Spacing
+========================================= */
+
+.lq-topic-page {
+    padding-top: 90px;
+}
+
+.lq-topic-page > .container > [data-component="breadcrumbs"] {
+    margin-bottom: 20px;
 }
